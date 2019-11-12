@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <h1>Uploading new videos</h1>
+	<form action="/homepage" method='post', class='ui form' style='width: 50%;'>
+
+	    Thumb Nail:<br>
+        <input type="text" name="thumb_nail" value = "Please upload a thumb nail">
+        <br>
+        Title:<br>
+        <input type="text" name="title">
+        <br>
+        Created On:<br>
+        <input type="text" name="created_on">
+        <br>
+        Duration:<br>
+        <input type="text" name="duration">
+        <br>
+        <br><br>
+        <button class="ui button">
+            Submit
+        </button>
+	
+    </form>     
+</div>
+{% endblock %}

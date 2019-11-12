@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="container">
+    <h1>List of videos</h1>
+    <table style="width:100% padding-top:50px" class="ui celled table">
+   
+  <tr>
+    <th>Title</th>
+    <th>Created On</th> 
+    <th>Duration</th>
+    
+
+  </tr>
+  
+
+    {% for video in video_lists %}
+                <tr>
+                    <td>{{ video.title }}</td>
+                    <td>{{ video.created_on }} </td>
+                    <td>{{ video.duration }} </td>
+              
+                        
+                </tr>
+    {% endfor %}
+    </table>
+
+</div>
+{% endblock %}

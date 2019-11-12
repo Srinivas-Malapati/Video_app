@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+        <div class="container">
+            <h2>Login page</h2>
+
+            <form action="/homepage" method="post" ,class='ui form' style='width: 50%;'>
+                Username:<br>
+                <input type="text" name="username">
+                <br>
+                Password:<br>
+                <input type="password" name="password">
+                <br><br>
+                <button class="ui button">
+                Submit
+            </button>
+        </form> 
+
+    
+</div>
+{% endblock %}
